@@ -2,7 +2,6 @@
 from detr.models.detr_multi import build as build_multi
 from detr.models.detr import build
 
-
 def build_model(args):
     return build(args)
 
