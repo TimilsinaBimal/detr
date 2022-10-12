@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name="detr",
-      version="0.1",
+      version="1.0",
       packages=[
-        "util/" , "models/"
+        "detr/"
         ])
