@@ -9,4 +9,5 @@ setup(name="detr",
             "torch>=1.5.0",
             "torchvision>=0.6.0",
             "scipy"
-            ])
+            ]
+            )

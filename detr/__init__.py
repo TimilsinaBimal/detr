@@ -1,2 +1,2 @@
-from .models import *
-from .util import *
+from detr.models import *
+from detr.util import *

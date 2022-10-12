@@ -2,12 +2,12 @@
 """
 DETR model and criterion classes.
 """
-import torch
-import torch.nn.functional as F
-from torch import nn
+# import torch
+# import torch.nn.functional as F
+# from torch import nn
 
-from util import box_ops
-from util.misc import (NestedTensor, nested_tensor_from_tensor_list,
+from detr.util import box_ops
+from detr.util.misc import (NestedTensor, nested_tensor_from_tensor_list,
                        accuracy, get_world_size, interpolate,
                        is_dist_avail_and_initialized)
 
@@ -307,11 +307,11 @@ def build(args):
     transformer = build_transformer(args)
     hidden_dim = transformer.d_model
     query_embed = nn.Embedding(args.num_queries, hidden_dim)
-    
+
     model_list = []
     criterion_list = []
     postprocessors_list = []
-    
+
     for num_classes, emphasized_weights in zip(args.num_classes_list, args.emphasized_weights_list):
         model = DETRMulti(
             backbone,
