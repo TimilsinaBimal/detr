@@ -1,6 +1,6 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
-from .detr import build
 from .detr_multi import build as build_multi
+from .detr import build
 
 
 def build_model(args):
