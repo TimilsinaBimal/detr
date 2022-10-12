@@ -2,9 +2,9 @@
 """
 DETR model and criterion classes.
 """
-# import torch
-# import torch.nn.functional as F
-# from torch import nn
+import torch
+import torch.nn.functional as F
+from torch import nn
 
 from detr.util import box_ops
 from detr.util.misc import (NestedTensor, nested_tensor_from_tensor_list,
